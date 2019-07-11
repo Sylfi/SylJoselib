@@ -2,18 +2,17 @@
 def signup
   puts "Enregistre un mot de passe :)"
   signup = gets.chomp
-  return signup
+  
 end
 
-def login
-    password = signup
+def login(password)
     puts "Entre ton mot de passe stp :)"
     tentative_password = gets.chomp.to_s
     while tentative_password != password
         puts "ah aha ah ! Tu n'as pas dit le mot magique, retape ton mdp"
         tentative_password = gets.chomp.to_s
     end
-    puts welcome_screen
+
 end
 
 def welcome_screen
@@ -22,4 +21,11 @@ def welcome_screen
     puts "Deuxième secret : nous faisons partie des illuminati"
 end
 
-puts login
+def perform
+    password = signup
+    login(password)
+    welcome_screen
+end
+
+perform
+
