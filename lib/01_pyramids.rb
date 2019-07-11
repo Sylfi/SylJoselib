@@ -1,5 +1,6 @@
+puts "Salut, bienvenue dans ma super pyramide inversée ! Combien d’étages veux-tu ?"
 def full_pyramide
-    puts "Salut, bienvenue dans ma super pyramide inversée ! Combien d’étages veux-tu ?"
+    
     nombres = gets.chomp.to_i
     nombre = nombres / 2
     
