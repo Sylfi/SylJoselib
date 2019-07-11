@@ -1,4 +1,18 @@
-puts "Salut, bienvenue dans ma super pyramide inversée ! Combien d’étages veux-tu ?"
+def full_pyramide
+    puts "Salut, bienvenue dans ma super pyramide ! Combien d’étages veux-tu ?"
+    nombre = gets.chomp.to_i
+    nombre.times {|n|
+        print ' ' * (nombre - n)
+        puts '#' * (2 * n + 1)
+    }
+end
+
+puts full_pyramide
+
+
+
+
+puts "Salut, bienvenue dans ma super pyramide cheloue ! Combien d’étages veux-tu ?"
 def full_pyramide
     
     nombres = gets.chomp.to_i
