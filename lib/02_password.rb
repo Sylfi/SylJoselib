@@ -2,7 +2,7 @@
 def signup
   puts "Enregistre un mot de passe :)"
   signup = gets.chomp
-  
+  return signup
 end
 
 def login(password)
