@@ -5,19 +5,7 @@ def game
         
         if number==1
             position -=1
-            puts "Résultat : #{number}"def signup
-            puts "Enregistre un mot de passe :)"
-            signup = gets.chomp
-            
-        end
-        
-        def login(password)
-        puts "Entre ton mot de passe stp :)"
-        tentative_password = gets.chomp.to_s
-        while tentative_password != password
-            puts "ah aha ah ! Tu n'as pas dit le mot magique, retape ton mdp"
-            tentative_password = gets.chomp.to_s
-        end
+            puts "Résultat : #{number}"
             puts  "Tu es sur la #{position}ème marche"
             
             elsif number==2 || number==3 || number==4
